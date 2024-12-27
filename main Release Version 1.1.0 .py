@@ -111,11 +111,6 @@ class Account:
         elif hasattr(self, 'compoundDate'):
             dateNow = datetime.now()
             
-##            #Testing of Intrest Calculation
-##            try:
-##                dateNow = dateNow.replace(year = dateNow.year + 1)
-##            except ValueError:
-##                dateNow = dateNow.replace(month = 2, day = 28, year = dateNow.year + 1)
             dateNow = dateNow.strftime("%Y-%m-%d")
 
             
@@ -136,9 +131,6 @@ class Account:
 
                 self.UpdateTransactionHistory(accountDatabase, accountDatabase.index(self), "interestReceived", previousInvestmentBalance, self.GetCurrentInvestment())
 
-                
-            
-            
 
     def UpdateTransactionHistory(self, accountDatabase, accountIndex, transactionType, amount, previousBalance, currentBalance, recipientIndex=None):
         if not hasattr(self, 'transactionHistory'):
@@ -218,8 +210,6 @@ class Account:
                     print("Invalid amount. Please enter a positive value\n")
             except ValueError:
                 print("Invalid Input. Please enter a numerical value\n")
-
-#here i added the bank reciept for withdrawal and deposit(lorenz)
 
 
 #Account Information Changes
@@ -667,8 +657,6 @@ def EditAccountInfo(accountDatabase, accountIndex):
             print("----------------------------------------------------------------------------\n")
             break
 
-
-#########################################################################
         
 def transferFunds(accountDatabase, senderIndex):
     print("------------------------------ Transfer Funds ------------------------------\n")
@@ -738,7 +726,7 @@ def transferFunds(accountDatabase, senderIndex):
     #here i add the receipt for the recipient(lorenz)
 
 
-#################################################################################
+
 
 def AccountStatusInterface(accountDatabase, accountIndex):
     print("\n")
@@ -749,8 +737,6 @@ def AccountStatusInterface(accountDatabase, accountIndex):
         print("------------------------Welcome to your Account Page------------------------\n")
         
         accountDatabase[accountIndex].ShowAccountInformation()
-
-        #Here iinsert ang options for withdrawal, fund transfer, all transaction history etc.. add nyo lang sa userInput ung options (b, c, etc....) and lagay nyo rin ung letter sa options list in lowercase
 
         options = ["a", "b","c","d","e", "f", "g"] # add option here
         
@@ -1029,11 +1015,6 @@ def mainLoop():
     print("\n You have exited the program.")
     
 
-        
-    
-
-    
-        
 
 
 mainLoop()
