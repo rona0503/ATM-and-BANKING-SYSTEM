@@ -1,0 +1,90 @@
+Version 1.0.0 December 19, 2024 Developer of this Update: @Ronald
+
+Changelog:
+
+-Added the functionality of creating an account using a name, and initial deposit as input
+- Added the functionality of log in to an account using a generated account number
+- Added functionality of logging out and making sure that the inputted data was saved
+- Added basic console interface for the program
+- Added error handling for the majority of the cases in each input in the program
+
+
+Version 1.0.1 December 22, 2024 Developer of this Update: @Ronald
+
+Changelog:
+- Added National I.D, Email, Phone Number and Password to Account Creation 
+- Made a change in where you can now use Account Number, Email and Password to log in to your account
+- Added the ability to edit your account info in the Account Status Interface Page
+- Added the ability to withdraw money from your account (Majority Credit: @Charles Justin)
+
+
+Bug Fixes:
+- Fixed a bug in where characters such as ( and ) are accepted into the program ( such as Ronald() Vincent G. Sarmiento )
+
+
+Version 1.0.2 December 23, 2024 Developer of this Update: @Ronald
+
+Changelogs:
+- Made a change in where the money is now displayed to include centavo
+- All future transactions in money will now include centavos
+- Added Confirmation to Initial Deposit and Withdraw function
+- All future transactions will now include confirmations
+- Added Deposit Function (Major Contributor: @Marc Daniel)
+
+Version 1.0.2v2 December 23, 2024 Hotfix Developer of this Update: @Ronald
+
+Bug fix:
+- Fixed a bug in where integers such as 624 was not accepted by the withdrawal function
+
+
+
+
+Version 1.0.3 December 23, 2024 Developer of this Update: @Ronald
+
+Changelog:
+- Added a change in where you can no longer input an specific variable in the Account Creation if it already exists in the database (i.e Name, Account Number, Email and Phone Number)
+- Separated the Change*Attributes* methods from the class and put it in its own function
+- Replaced the ChangeAttributes methods with UpdateAttribute methods 
+- Added the Transfer Function (All Credit: @Remier)
+
+Bugfix:
+- Fixed a bug in where it is possible to change your account info to be the same attributes with another existing account
+
+
+Version 1.0.4 December 23, 2024 Developer of this Update: @Lorenz
+
+Changelog:
+
+- Added bankreciept function to generate receipts for withdrawals, deposits, and transfers
+- Updated Withdraw, Deposit, and transferFunds functions to call bankreciept with appropriate parameters
+- Added input validation and formatting for 12-digit or 14-character National ID numbers in the ChangeIDNumber function.
+
+Version 1.0.5 December 24, 2024 Developer of this Update: @Lorenz
+
+- Added AccountStatusInterface function to handle account investment.
+- Added investment function to handle investment operations.
+
+
+Bugfix:
+- fixed a bug in mainLoop function to handle the main menu and user input.
+- Fixed TypeError in investment function by converting balance to float.
+
+Version 1.0.6 December 26,2024 Developer of this Update: @Ronald
+
+Changelog:
+- Changed some formatting details in the Investment function for consistency and readability
+- In the Bank Receipt Function, The P was capitalized in bankstatement variable
+- Added "-" line in each receipt subfunction
+- Added a linebreak in the 2nd to the last print function in the transfer receipt subfunction for consistency
+- Made a change in where you now require to input a 16-digit number for the National I.D instead of 12-Digits
+Bugfix:
+- Fixed a bug in where in the investment function, A wrong input will not output an error message (Credit: @Lorenz)
+
+Version 1.1.0 Release Version 1.0 Developer: @Ronald
+
+Changelog:
+-  Changed many string formatting for more neat and clean console interface
+-  Added Timestamps to receipts
+-  Added TransanctionHistory Update and Show methods in the Account Class
+-  Implemented the Interest and investment features. You will now get 10% interest compounded annually from your Investment. The compounding date starts from exact moment of first investment
+-  Added receipt for investment/interest
