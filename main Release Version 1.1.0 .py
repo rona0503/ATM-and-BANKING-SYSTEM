@@ -27,7 +27,12 @@
 ##                                  - Handled the formatting of this program
 ##                                  - Fixed bugs that popped up during the development cycle
 ##
-
+##
+## Changelogs PasteBin
+## https://pastebin.com/ufHEEjb9
+##
+## Github Repository
+## https://github.com/rona0503/ATM-and-BANKING-SYSTEM
 
 
 from datetime import datetime
